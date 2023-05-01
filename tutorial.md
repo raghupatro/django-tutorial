@@ -69,4 +69,10 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 ```
 
-4.
+4. tell our project that the polls app is installed, add 'polls.apps.PollsConfig' to _mysite/settings.py_
+5. tell django that changes are made to the models, make migration for the polls app `python manage.py makemigrations polls`
+6. run `python manage.py sqlmigrate polls 001` to check the sql code Django will run on migrating
+7. run migration `python manage.py migrate`
+8. `python manage.py shell` opens the interactive python shell
+9. make changes in the model as required, after interacting with the model in the shell
+10.
