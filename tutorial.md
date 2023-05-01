@@ -75,4 +75,23 @@ class Choice(models.Model):
 7. run migration `python manage.py migrate`
 8. `python manage.py shell` opens the interactive python shell
 9. make changes in the model as required, after interacting with the model in the shell
-10.
+
+### Admin
+
+1. create an admin `python manage.py createsuperuser`
+   admin
+   admin@example.com
+   12345
+2. edit _polls/admin.py_ to tell django that Questions have an admin interface
+
+```
+from django.contrib import admin
+
+from .models import Question
+
+admin.site.register(Question)
+```
+
+## part 3: writing your first Django app
+
+1.
