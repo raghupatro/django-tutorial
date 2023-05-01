@@ -10,7 +10,7 @@
 6. save dependencies list in a file `python -m pip freeze > requirements.txt`
 7. add and commit changes
 
-## to create a basic Django project (as per docs)
+## part 1: to create a basic Django project (as per docs)
 
 1. `django-admin startproject mysite` creates a base project
 2. `python manage.py runserver` to run the website
@@ -48,4 +48,25 @@ urlpatterns = [
 
 7. runserver
 
-## further
+## part 2: database setup and django admin
+
+1. _mysite\settings.py_ has all settings, change database settings according to requirements
+2. `python manage.py migrate` to create the tables(req for any of the Django applications) in the database
+3. create your Question and Answer data models in _polls/models.py_
+
+```
+from django.db import models
+
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField("date published")
+
+
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)
+```
+
+4.
