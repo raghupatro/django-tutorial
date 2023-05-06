@@ -99,3 +99,9 @@ admin.site.register(Question)
 3. templates are used to seperate the design from the python, create a template directory and set it up
 4. add render() methods in index and detail methods
 5. create namespace for individual apps, and specify the namespace of a view in the templates
+
+## part 4: minimalising our code and adding results and vote view
+
+1. create the other views
+2. minimalize te code
+3. 
