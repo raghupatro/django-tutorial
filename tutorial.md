@@ -104,4 +104,6 @@ admin.site.register(Question)
 
 1. create the other views
 2. minimalize te code
-3. 
+3. rewrite the entire code to use generic views
+
+## part 5: 
