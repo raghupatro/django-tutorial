@@ -94,4 +94,8 @@ admin.site.register(Question)
 
 ## part 3: writing your first Django app
 
-1.
+1. create more views in polls app
+2. views are supposed to either send an HttpResponse or raise an exception
+3. templates are used to seperate the design from the python, create a template directory and set it up
+4. add render() methods in index and detail methods
+5. create namespace for individual apps, and specify the namespace of a view in the templates
