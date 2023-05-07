@@ -110,5 +110,10 @@ admin.site.register(Question)
 
 1. we can use `python manage.py shell` to open a shell, and manually test for bugs
 2. write required tests in the tests.py file
-3. use `python manage.py test polls` to run tests for the polls app
-4. 
+3. use `python manage.py test polls` to run tests for the models.py module in the polls app
+4. Django provides _test Client_ to simulate a user
+5. write tests for literally every method, in testing more is better
+
+## part 6: Django Static Files
+
+1. 
