@@ -116,4 +116,14 @@ admin.site.register(Question)
 
 ## part 6: Django Static Files
 
+1. add files in a new directory "static"
+2. add a new folder "polls" to create the app's individual namespace
+3. add the following code in the index.html template
+```
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+```
+
+## part 7: Customizing the Django Admin
+
 1. 
