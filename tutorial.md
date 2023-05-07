@@ -106,4 +106,9 @@ admin.site.register(Question)
 2. minimalize te code
 3. rewrite the entire code to use generic views
 
-## part 5: 
+## part 5: Django Tests
+
+1. we can use `python manage.py shell` to open a shell, and manually test for bugs
+2. write required tests in the tests.py file
+3. use `python manage.py test polls` to run tests for the polls app
+4. 
