@@ -126,4 +126,12 @@ admin.site.register(Question)
 
 ## part 7: Customizing the Django Admin
 
+1. customize polls/admin.py as required
+2. add @admin decorator in the was_published_recently method in the Question model
+3. to customize the look of the admin, create a templates folder in the project dir "mysite"
+4. add the dir to the DIR variable in the mysite/settings.py file
+5. make changes to templates in the templates folder, to override any default Django templates
+
+## part 8: getting further help
+
 1. 
