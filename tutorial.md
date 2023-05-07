@@ -134,4 +134,4 @@ admin.site.register(Question)
 
 ## part 8: getting further help
 
-1. 
+1. toolbar, getting help etc.
